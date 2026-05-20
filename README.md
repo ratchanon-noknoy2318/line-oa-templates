@@ -139,9 +139,6 @@ Below is an example of a Flex Message used in this system for healthcare communi
   }
 }
 ```
-## Notes
-
-Built 11+ Flex Messages using the LINE Messaging API free tier.
 
 ## Project Reference
 
