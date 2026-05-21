@@ -33,19 +33,10 @@ Below is an example of a Flex Message used in this system for healthcare communi
         "size": "xl"
       },
       {
-        "type": "box",
-        "layout": "baseline",
-        "margin": "md",
-        "contents": [
-          {
-            "type": "text",
-            "size": "sm",
-            "color": "#999999",
-            "margin": "md",
-            "flex": 0,
-            "text": "บริการปรึกษาแพทย์ทางไกล"
-          }
-        ]
+        "type": "text",
+        "text": "บริการแพทย์ทางไกล",
+        "weight": "regular",
+        "size": "xl"
       }
     ]
   }
