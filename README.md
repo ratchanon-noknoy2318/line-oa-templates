@@ -1,8 +1,9 @@
 # 🚀 11+ LINE Flex Message Templates
 
-**Stop hand-coding complex nested JSON.** This is a curated collection of 11 LINE Flex Message templates (Free Tier), designed for easy use without manual JSON coding. Optimized for high conversion and consistent rendering across both iOS and Android devices.
+<p align="left">
+  Ready-to-use LINE Flex Message templates for healthcare automation.
+</p>
 
----
 
 ## 📸 Preview Gallery
 *Captured from [Flex simulator](https://developers.line.biz/flex-simulator/).*
@@ -13,27 +14,39 @@
 | [JSON](./TelemedicineStartFlexmessage.json) | [JSON](./TelemedicineMoreInfoFlexmessage.json) | [JSON](./AboutUsFlexmessage.json) | [JSON](./HealthTipsFlexmessage.json) |
 
 ## ⚙️ Developer Integration
-Directly load JSON files and pass the content to the LINE Messaging API SDK. Environment variables (.env) are used to securely store the LINE Channel Access Token and Channel Secret.
-
+Directly load JSON files and pass the content to the LINE Messaging API SDK. Environment variables (.env) are used to securely store the LINE Channel Access Token and Channel Secret.<br>
 **Node.js Example:**
 ```javascript
-const getTelemedSession = require('./TelemedicineStartFlexmessage.json');
-
-// Send via LINE Messaging API SDK
-// Load environment variables
-const config = {
-  channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
-  channelSecret: process.env.CHANNEL_SECRET,
-};
-
-// LINE SDK client
 import { Client } from "@line/bot-sdk";
-
-const client = new Client(config);
-
-// Import Flex Message JSON
 import flexMessage from "./TelemedicineStartFlexmessage.json" with { type: "json" };
 
-// Send message example
+const client = new Client({
+  channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
+  channelSecret: process.env.CHANNEL_SECRET,
+});
+
 await client.pushMessage(USER_ID, flexMessage);
 ```
+
+
+
+## 🔐 Security Notice
+
+This project uses LINE Messaging API credentials to enable messaging functionality.
+
+- The `CHANNEL_ACCESS_TOKEN` and `CHANNEL_SECRET` must be stored in environment variables only (`.env`)
+- Never expose these values in frontend code or public repositories
+- If credentials are leaked, immediately revoke and re-issue them from the LINE Developers Console
+- Each environment (dev / staging / production) should use separate channel credentials
+
+For security reasons:
+- Do not commit `.env` files to version control
+- Ensure `.gitignore` includes `.env*`
+
+## 🧪 Environment Setup
+
+Create a `.env.local` file in the root directory:
+
+```env
+CHANNEL_ACCESS_TOKEN=your_line_channel_access_token
+CHANNEL_SECRET=your_line_channel_secret
