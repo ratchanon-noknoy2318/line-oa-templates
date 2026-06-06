@@ -2,16 +2,16 @@ import { Client, validateSignature } from "@line/bot-sdk"; // นำเข้า
 import { NextResponse } from 'next/server';
 
 // --- นำเข้า Flex Messages จากไฟล์ JSON ---
-import getTelemedSession from "./flex_messages/TelemedicineStartFlexmessage.json" with { type: "json" };
-import getLatestNews from "./flex_messages/PublicRelationsFlexmessage.json" with { type: "json" };
-import getMoreTelemed from "./flex_messages/TelemedicineMoreInfoFlexmessage.json" with { type: "json" };
-import getContactInfo from "./flex_messages/ContactUsFlexmessage.json" with { type: "json" };
-import getAboutDetails from "./flex_messages/AboutUsFlexmessage.json" with { type: "json" };
-import getGeneralCheckup from "./flex_messages/GeneralService.json" with { type: "json" };
-import getTraditionalDoctors from "./flex_messages/ThaiChineseService.json" with { type: "json" };
-import getThaiMedicineDoctors from "./flex_messages/ThaiService.json" with { type: "json" };
-import getFaq from "./flex_messages/FaqFlexmessage.json" with { type: "json" };
-import getHealthTips from "./flex_messages/HealthTipsFlexmessage.json" with { type: "json" };
+import getTelemedSession from "./TelemedicineStartFlexmessage.json" with { type: "json" };
+import getLatestNews from "./PublicRelationsFlexmessage.json" with { type: "json" };
+import getMoreTelemed from "./TelemedicineMoreInfoFlexmessage.json" with { type: "json" };
+import getContactInfo from "./ContactUsFlexmessage.json" with { type: "json" };
+import getAboutDetails from "./AboutUsFlexmessage.json" with { type: "json" };
+import getGeneralCheckup from "./GeneralService.json" with { type: "json" };
+import getTraditionalDoctors from "./ThaiChineseService.json" with { type: "json" };
+import getThaiMedicineDoctors from "./ThaiService.json" with { type: "json" };
+import getFaq from "./FaqFlexmessage.json" with { type: "json" };
+import getHealthTips from "./HealthTipsFlexmessage.json" with { type: "json" };
 
 /**
  * GET handler for health check.
