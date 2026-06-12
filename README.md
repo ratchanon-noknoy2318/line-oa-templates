@@ -50,3 +50,4 @@ Create a `.env.local` file in the root directory:
 ```env
 CHANNEL_ACCESS_TOKEN=your_line_channel_access_token
 CHANNEL_SECRET=your_line_channel_secret
+```
