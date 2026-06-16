@@ -1,6 +1,6 @@
 # LINE Flex Message Templates
 
-Ready-to-use healthcare Flex Message templates.
+Ready-to-use healthcare Flex Message templates. ```FREE```
 
 ## Preview
 
