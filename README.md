@@ -1,4 +1,3 @@
-# Preview
 
 |                Telemed Start                |                     More Info                    |                     About Us                     |                    Health Tip                    |
 | :----------------------------------------------: | :----------------------------------------------: | :----------------------------------------------: | :----------------------------------------------: |
@@ -12,5 +11,3 @@
 | [JSON](./ThaiService.json) | [JSON](./AnnouncementsFlexmessage.json) |
 
 
----
-*For hospital use only.*
